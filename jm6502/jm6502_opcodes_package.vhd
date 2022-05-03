@@ -3,12 +3,12 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
+use work.jm_hex.all;
+
 package jm6502_opcodes_package is 
 
 
     -- Custom Types
-    subtype byte    is unsigned(7 downto 0);
-    subtype nibble  is unsigned(3 downto 0);
     subtype address is unsigned(15 downto 0);
 
 

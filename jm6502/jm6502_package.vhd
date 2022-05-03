@@ -3,6 +3,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
+use work.jm_hex.all;
 use work.jm6502_opcodes_package.all;
 
 package jm6502_package is 
