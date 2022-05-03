@@ -5,6 +5,7 @@ use ieee.numeric_std.all;
 use ieee.math_real.all;
 
 use work.RAM_package.all;
+use work.jm_hex.all;
 
 entity RAM_tb is 
 end RAM_tb;
@@ -55,7 +56,7 @@ begin
 
         for I in 0 to MAX_COUNT - 1 loop
 
-            lower_addr_byte     := std_logic_vector(to_unsigned(I, lower_addr_byte'length));
+            lower_addr_byte     := to_unsigned(I, lower_addr_byte'length);
             load_data           := load_data xor lower_addr_byte;
 
             enable              <= '1';

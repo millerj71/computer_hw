@@ -4,6 +4,7 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 use work.RAM_package.all;
+use work.jm_hex.all;
 
 entity RAM is 
     generic(

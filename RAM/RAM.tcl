@@ -9,6 +9,7 @@ vlib work
 vmap work work
 
 # compile the program and test-bench files (vcom program_name.vhd)
+vcom ../hex_conversions/jm_hex.vhd
 vcom RAM_package.vhd
 vcom RAM.vhd
 vcom RAM_tb.vhd

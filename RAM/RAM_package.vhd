@@ -4,15 +4,13 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 use ieee.math_real.all;
 
-use std.textio.all;
+use work.jm_hex.all;
 
 package RAM_package is 
 
     constant ADDR_WIDTH         : integer := 16;
     constant NUM_ADDR_LOCATIONS : integer := 2**ADDR_WIDTH;
 
-    subtype nibble      is std_logic_vector(3 downto 0);
-    subtype byte        is std_logic_vector(7 downto 0);
     subtype address     is unsigned(ADDR_WIDTH - 1 downto 0);
     type    RAM_16bit   is array(0 to NUM_ADDR_LOCATIONS - 1) of byte;
 
