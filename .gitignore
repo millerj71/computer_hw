@@ -1,0 +1,11 @@
+
+*.psm
+*.prw
+*.dat
+*.dbs
+
+work/
+*/work/
+
+*.ini
+*.wlf
