@@ -59,12 +59,14 @@ package body jm6502_package is
 
 
     function isLow(input : std_logic) return boolean is 
+        variable output     : boolean;
     begin 
         if input = '0' then 
-            return true;
+            output := true;
         else 
-            return false;
+            output := false;
         end if;
+        return output; 
     end function isLow;
 
     function isLow(input : std_logic_vector) return boolean is 
@@ -78,12 +80,14 @@ package body jm6502_package is
 
 
     function isHigh(input : std_logic) return boolean is 
+        variable output     : boolean;
     begin 
         if input = '1' then 
-            return true;
+            output := true;
         else 
-            return false;
+            output := false;
         end if;
+        return output;  
     end function isHigh;
 
     function isHigh(input : std_logic_vector) return boolean is 
