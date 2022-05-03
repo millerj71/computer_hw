@@ -4,8 +4,7 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 use work.ROM_package.all;
-
-use std.textio.all;
+use work.jm_hex.all;
 
 entity ROM is 
     port(

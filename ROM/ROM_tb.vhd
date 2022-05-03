@@ -5,6 +5,7 @@ use ieee.numeric_std.all;
 use ieee.math_real.all;
 
 use work.ROM_package.all;
+use work.jm_hex.all;
 
 entity ROM_tb is 
 end ROM_tb;
