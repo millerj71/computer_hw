@@ -4,7 +4,7 @@ quit -sim
 
 # select a directory for creation of the work directory
 # cd {file_directory_location}
-cd {C:\Users\Joseph Miller\OneDrive\Documents\VHDL_Practice\CPU6502\jm6502}
+cd {C:\Users\Joseph Miller\OneDrive\Documents\VHDL_Practice\computer_hw\jm6502}
 vlib work
 vmap work work
 
